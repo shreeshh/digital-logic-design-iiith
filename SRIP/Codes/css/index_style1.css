@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetica Neu
 }
 
 #blur {
-    background: url('../images/background1.jpg') no-repeat center center; 
+    background: url('../images/background.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetica Neu
     right: 0;
 	top: -10px;
     z-index: -10;
-    height: 90%;
+    height: 100%;
     overflow-x: hidden;
 }
 #carousel {
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetica Neu
 
 
 .btn-orange {
-    background-color: rgb(24,202,230);
+    background-color: rgb(200, 50, 50);
     border-bottom:2px solid black;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetica Neu
 }
 
 .btn-orange:hover, .btn-orange:focus, .btn-orange:active, .btn-orange.active, .open .dropdown-toggle.btn-orange {
-    background-color: rgb(66, 135, 245);
+    background-color: rgb(210, 60, 60);
     color:#ffffff;
 }
 
