@@ -4,7 +4,6 @@
 
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <script type="text/javascript" src="simcir.js">
-  window.onload(alert)
 </script>
 <link rel="stylesheet" type="text/css" href="simcir.css" />
 <script type="text/javascript" src="simcir-basicset.js"></script>
@@ -188,23 +187,36 @@ transition: all 0.4s ease 0s;
 <title>Vlabs-DLD</title>
 </head>
 <body>
+
+<script>
+function tut() {
+  alert("Hello, Welcome to the vlabs-dld simulation. I will guide you through the basics of this simulation, press enter to move to the next prompt.");
+  alert("Choose a device from the toolbox and move to right side.");
+  alert("Connect them by drag operation.");
+  alert("Click an input node to disconnect.");
+  alert("Move a device back to the toolbox if you don't use.");
+  alert("Ctrl+Click(Mac:command+Click) to toggle view (Live circuit or JSON data).")
+  alert("Double-Click a label to edit device name.")
+  alert("Double-Click a library to open the circuit inside.")
+  alert("For simulating logic gates, use a dc source followed by a toggle switch as input and an LED indicating the output")
+  alert("Intuitively, LED - ON will correspond to logic HIGH, and OFF will correspond to logic LOW")
+  alert("This is only what a fraction of what you can do with the simulator. Feel free to fiddle around.")
+}
+</script>
 <!-- drop down menu -->
 <nav class="mobile-menu">
 <label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
   <input type="checkbox" id="show-menu">
     <ul id="menu">
-    <li><a href="#">Home</a></li>
-    <li>      <a href="#">Instructions</a>   </li>
-    <li>      <a href="#">Fork me</a>   </li>
-    <li><a href="#">VLabs</a></li>
-    <li><a href="#">Reset</a></li>
+    <li><a href="http://cse15-iiith.vlabs.ac.in/">Home</a></li>
+    <li>      <a onclick="tut()">Instructions</a>   </li>
+    <li>      <a href="https://github.com/shreeshh/digital-logic-design-iiith">Fork me</a>   </li>
+    <li><a href="http://www.vlab.co.in/participating-institute-iiit-hyderabad">VLabs</a></li>
+    <li><a href="sample.html">Reset</a></li>
   </ul>
 </nav>
 <br> <br>
 <!-- menu ends here -->
-
-<!-- <h1>VLabs@IIITH</h1> -->
-
 <div style="margin:16px 0px 16px 0px">
   <br/>
 </div>
@@ -234,3 +246,40 @@ All the other attributes will be used defaults.
 
 </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
